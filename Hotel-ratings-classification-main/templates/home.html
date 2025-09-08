@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home</title>
+	<link rel="stylesheet" href="../static/stylesAbhyas.css">
+
+</head>
+<body>
+<body style= "background-color:honeydew; text-align: center; background-image: url('../templates/OberoiBengaluru.png'); background-size:cover;">
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Deployment using Flask
+		</div>
+		<h2>Predict Ratings for Hotel Reviews</h2>
+		</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Customer Review Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="Predict Rating">
+		
+	</form>
+		
+	</div>
+
+<h4></h4>	
+<a href="https://www.excelr.com/" target="_blank"> Visit ExcelR Institute</a>
+</body>
+</html>
